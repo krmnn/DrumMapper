@@ -244,20 +244,20 @@ jobs:
         endif()
         execute_process(COMMAND ccache -s)
 
-    - name: Run tests
-      shell: cmake -P {0}
-      run: |
-        include(ProcessorCount)
-        ProcessorCount(N)
-        set(ENV{CTEST_OUTPUT_ON_FAILURE} "ON")
-        execute_process(
-          COMMAND ${{ steps.cmake_and_ninja.outputs.cmake_dir }}/ctest -j ${N}
-          WORKING_DIRECTORY build
-          RESULT_VARIABLE result
-        )
-        if (NOT result EQUAL 0)
-          message(FATAL_ERROR "Running tests failed!")
-        endif()
+        #- name: Run tests
+        #  shell: cmake -P {0}
+        #  run: |
+        #    include(ProcessorCount)
+        #    ProcessorCount(N)
+        #    set(ENV{CTEST_OUTPUT_ON_FAILURE} "ON")
+        #    execute_process(
+        #      COMMAND ${{ steps.cmake_and_ninja.outputs.cmake_dir }}/ctest -j ${N}
+        #      WORKING_DIRECTORY build
+        #      RESULT_VARIABLE result
+        #    )
+        #    if (NOT result EQUAL 0)
+        #      message(FATAL_ERROR "Running tests failed!")
+        #    endif()
 
     - if: ${{ runner.os=='Windows'}}
       name: Pack (Windows)
