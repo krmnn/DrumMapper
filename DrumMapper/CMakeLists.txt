@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.4)
 project("DrumMapper")
 
 
-list(APPEND CMAKE_MODULE_PATH "../FRUT/prefix/FRUT/cmake")
+list(APPEND CMAKE_MODULE_PATH "./FRUT/prefix/FRUT/cmake")
 include(Reprojucer)
 
 set(JUCE_MODULES_GLOBAL_PATH "../../JUCE/modules")
