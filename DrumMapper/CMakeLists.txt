@@ -224,4 +224,14 @@ jucer_export_target_configuration(
     "../../Ext/JBPluginBase/Ext/json/include"
     )
 
+jucer_export_target_configuration(
+    "Linux Makefile"
+    NAME "Release"
+    DEBUG_MODE OFF
+    BINARY_NAME "DrumMapper"
+    HEADER_SEARCH_PATHS
+    "../../Ext/JBPluginBase/Ext/json/include"
+    )
+
+
 jucer_project_end()
