@@ -1,0 +1,9 @@
+[submodule "FRUT"]
+	path = FRUT
+	url = https://github.com/McMartin/FRUT.git
+[submodule "JUCE"]
+	path = JUCE
+	url = https://github.com/juce-framework/JUCE.git
+[submodule "Ext/JBPluginBase"]
+	path = Ext/JBPluginBase
+	url = https://github.com/JanosGit/PluginBase.git
