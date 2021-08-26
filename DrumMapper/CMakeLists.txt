@@ -6,6 +6,7 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../FRUT/prefix/FRUT/c
 include(Reprojucer)
 
 set(JUCE_MODULES_GLOBAL_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../JUCE/modules")
+set(EXT_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../Ext")
 
 jucer_project_begin(
   JUCER_FORMAT_VERSION "1"
@@ -21,7 +22,7 @@ jucer_project_settings(
   BUNDLE_IDENTIFIER "com.krmnn.DrumMapper"
   CXX_LANGUAGE_STANDARD "C++14"
   HEADER_SEARCH_PATHS 
-    "../../../Ext/JBPluginBase/Ext/json/include"
+  "${EXT_PATH}/JBPluginBase/Ext/json/include"
 )
 
 jucer_audio_plugin_settings(
@@ -67,7 +68,7 @@ jucer_project_files("DrumMapper/Source/Source"
 
 jucer_project_module(
   jb_plugin_base
-  PATH "../Ext/JBPluginBase"
+  PATH "${EXT_PATH}/JBPluginBase"
   JB_INCLUDE_JSON YES
 )
 
@@ -197,7 +198,7 @@ jucer_export_target_configuration(
   DEBUG_MODE ON
   BINARY_NAME "DrumMapper"
   HEADER_SEARCH_PATHS
-    "../../Ext/JBPluginBase/Ext/json/include"
+  "${EXT_PATH}/JBPluginBase/Ext/json/include"
 )
 
 jucer_export_target_configuration(
@@ -206,7 +207,7 @@ jucer_export_target_configuration(
   DEBUG_MODE OFF
   BINARY_NAME "DrumMapper"
   HEADER_SEARCH_PATHS
-    "../../Ext/JBPluginBase/Ext/json/include"
+  "${EXT_PATH}/JBPluginBase/Ext/json/include"
 )
 
 jucer_export_target(
@@ -221,7 +222,7 @@ jucer_export_target_configuration(
     DEBUG_MODE ON
     BINARY_NAME "DrumMapper"
     HEADER_SEARCH_PATHS
-    "../../Ext/JBPluginBase/Ext/json/include"
+    "${EXT_PATH}/JBPluginBase/Ext/json/include"
     )
 
 jucer_export_target_configuration(
@@ -230,7 +231,7 @@ jucer_export_target_configuration(
     DEBUG_MODE OFF
     BINARY_NAME "DrumMapper"
     HEADER_SEARCH_PATHS
-    "../../Ext/JBPluginBase/Ext/json/include"
+    "${EXT_PATH}/JBPluginBase/Ext/json/include"
     )
 
 
