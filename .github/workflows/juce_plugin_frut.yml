@@ -194,8 +194,8 @@ jobs:
         set(ENV{PATH} "$ENV{GITHUB_WORKSPACE}${path_separator}$ENV{PATH}")
         execute_process(
           COMMAND ${{ steps.cmake_and_ninja.outputs.cmake_dir }}/cmake
-            -S .
-            -B build
+            -S DrumMapper
+            -B DrumMapper/build
             -D CMAKE_BUILD_TYPE=$ENV{BUILD_TYPE}
             -G Ninja
             -D CMAKE_MAKE_PROGRAM=ninja
@@ -236,7 +236,7 @@ jobs:
         execute_process(COMMAND ccache -p)
         execute_process(COMMAND ccache -z)
         execute_process(
-          COMMAND ${{ steps.cmake_and_ninja.outputs.cmake_dir }}/cmake --build build
+          COMMAND ${{ steps.cmake_and_ninja.outputs.cmake_dir }}/cmake --build DrumMapper/build
           RESULT_VARIABLE result
         )
         if (NOT result EQUAL 0)
