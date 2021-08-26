@@ -234,5 +234,24 @@ jucer_export_target_configuration(
     "${EXT_PATH}/JBPluginBase/Ext/json/include"
     )
 
+jucer_export_target("Visual Studio 2019")
+
+jucer_export_target_configuration(
+  "Visual Studio 2019"
+  NAME "Debug"
+  DEBUG_MODE ON
+  HEADER_SEARCH_PATHS
+  "${EXT_PATH}/JBPluginBase/Ext/json/include"
+  )
+)
+
+jucer_export_target_configuration(
+  "Visual Studio 2019"
+  NAME "Release"
+  DEBUG_MODE OFF
+  HEADER_SEARCH_PATHS
+  "${EXT_PATH}/JBPluginBase/Ext/json/include"
+  )
+)
 
 jucer_project_end()
