@@ -242,7 +242,6 @@ jucer_export_target_configuration(
   DEBUG_MODE ON
   HEADER_SEARCH_PATHS
   "${EXT_PATH}/JBPluginBase/Ext/json/include"
-  )
 )
 
 jucer_export_target_configuration(
@@ -251,7 +250,6 @@ jucer_export_target_configuration(
   DEBUG_MODE OFF
   HEADER_SEARCH_PATHS
   "${EXT_PATH}/JBPluginBase/Ext/json/include"
-  )
 )
 
 jucer_project_end()
