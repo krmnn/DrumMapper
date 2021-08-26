@@ -5,7 +5,7 @@ project("DrumMapper")
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../FRUT/prefix/FRUT/cmake")
 include(Reprojucer)
 
-set(JUCE_MODULES_GLOBAL_PATH "../../JUCE/modules")
+set(JUCE_MODULES_GLOBAL_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../JUCE/modules")
 
 jucer_project_begin(
   JUCER_FORMAT_VERSION "1"
