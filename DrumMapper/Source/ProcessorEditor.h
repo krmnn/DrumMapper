@@ -51,7 +51,7 @@ public:
     
 private:
     void addPresetManager (DrumMapperAudioProcessor& processorToControl);
-    void setupAndAddMessageOfTheDayComponents();
+    //void setupAndAddMessageOfTheDayComponents();
     
     void checkMessageOfTheDay (DrumMapperAudioProcessor& processor);
     void setMessage (const juce::String& text, const juce::URL url);

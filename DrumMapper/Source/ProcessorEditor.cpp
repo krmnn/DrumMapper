@@ -52,7 +52,7 @@ messageLearnMoreButton ("Learn more")
     
     
     addPresetManager (proc);
-    setupAndAddMessageOfTheDayComponents();
+    //setupAndAddMessageOfTheDayComponents();
     
     restoreSizeFromState();
     
@@ -112,7 +112,8 @@ void ProcessorEditor::addPresetManager (DrumMapperAudioProcessor& processorToCon
     addAndMakeVisible (*presetManagerComponent);
 }
 
-void ProcessorEditor::setupAndAddMessageOfTheDayComponents()
+/*
+ void ProcessorEditor::setupAndAddMessageOfTheDayComponents()
 {
     addChildComponent(messageEditor);
     addChildComponent (messageOkButton);
@@ -141,6 +142,7 @@ void ProcessorEditor::setupAndAddMessageOfTheDayComponents()
         repaint();
     };
 }
+*/
 
 void ProcessorEditor::setMessage (const juce::String& text, const juce::URL url)
 {
