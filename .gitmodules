@@ -6,4 +6,4 @@
 	url = https://github.com/juce-framework/JUCE.git
 [submodule "Ext/JBPluginBase"]
 	path = Ext/JBPluginBase
-	url = https://github.com/krmnn/PluginBase.git
+	url = https://github.com/JanosGit/PluginBase.git
