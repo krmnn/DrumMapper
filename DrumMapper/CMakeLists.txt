@@ -220,6 +220,7 @@ jucer_export_target_configuration(
     "Linux Makefile"
     NAME "Debug"
     DEBUG_MODE ON
+    ADD_RECOMMENDED_COMPILER_WARNING_FLAGS Disabled
     BINARY_NAME "DrumMapper"
     HEADER_SEARCH_PATHS
     "${EXT_PATH}/JBPluginBase/Ext/json/include"
@@ -229,6 +230,7 @@ jucer_export_target_configuration(
     "Linux Makefile"
     NAME "Release"
     DEBUG_MODE OFF
+    ADD_RECOMMENDED_COMPILER_WARNING_FLAGS Disabled
     BINARY_NAME "DrumMapper"
     HEADER_SEARCH_PATHS
     "${EXT_PATH}/JBPluginBase/Ext/json/include"
